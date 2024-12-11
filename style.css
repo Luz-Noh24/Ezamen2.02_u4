@@ -1,0 +1,1043 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --letranorm:Montserrat, sans-serif;
+    --letrati:Playfair,serif;
+    --gris:#BEBEBE;
+    --negro:#3C3C3C;
+    --grisdoscua:#686157;
+    --blaco:#fff;
+    --mora:#615768;
+    --axul:#6A76A1;
+    --a2:#2a3066 ;
+    --dorado:#f39c12;
+
+
+}
+
+.ancho
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+body 
+{
+    font-family: var(--letranorm);
+    margin: 0;
+    padding: 0;
+   background-color: #f4f4f4;
+}
+
+.nave
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-rows: auto; /* Una sola fila, ajustada al contenido */
+    gap: 10px; /* Espacio entre columnas */
+    padding: 10px;
+    background-color: var(--negro);
+}
+.contact-info 
+{
+  color: var(--gris);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Espaciado mayor entre elementos */
+}
+
+.contact-info span 
+{
+  color: var(--gris);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px; /* Espaciado entre íconos y texto */
+}
+
+.contact-info i 
+{
+  color: var(--gris);
+}
+
+.social-icons 
+{
+  display: flex; /* Alinea los íconos en una fila */
+  justify-content: end;
+  gap: 20px; /* Espaciado entre íconos */
+}
+
+.social-icons a 
+{
+  color: var(--gris);
+  text-decoration: none;
+  font-size: 24px; /* Aumenta el tamaño de los íconos */
+}
+
+.social-icons a:hover 
+{
+  color: var(--dorado); /* Color al pasar el cursor */
+}
+
+.nave2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+ #icono {
+    display: none; /* Icono de hamburguesa (solo visible en móvil) */
+    color: var(--gris);
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nave2 nav {
+    display: flex;
+}
+
+.nave2 nav ul {
+    list-style: none; /* Quita las viñetas */
+    display: flex;
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+.nave2 nav ul li a {
+    text-decoration: none; /* Elimina subrayado */
+    color: var(--blanco); /* Texto blanco */
+    font-size: 16px;
+    transition: color 0.3s; /* Efecto de transición */
+}
+
+.nave2 nav ul li a:hover {
+    color: var(--dorado); /* Cambia a dorado al pasar el ratón */
+}
+
+.nave2 nav ul li a i {
+    font-size: 18px; /* Tamaño del ícono */
+}
+/* Slide */
+.slide {
+    position: relative;
+    background-color: #f8f8f8;
+    height: 500px;  /* Asegúrate de que todas las imágenes tengan la misma altura */
+    overflow: hidden;
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estilo para las flechas de navegación */
+.rslides_nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    color: #fff; /* Color blanco */
+    z-index: 10;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.rslides_nav i {
+    font-size: 2em;
+    color: #fff;  /* Color blanco */
+    transition: color 0.3s ease;
+}
+
+/* Hover para cambiar color de las flechas */
+.rslides_nav:hover i {
+    color: var(--dorado);  /* Color dorado al pasar el ratón */
+}
+
+/* Posicionar la flecha izquierda */
+.rslides1_nav.prev {
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+/* Posicionar la flecha derecha */
+.rslides1_nav.next {
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+}
+
+/* Asegura que las flechas estén por encima del contenido */
+.rslides_nav {
+    display: hidden;
+    pointer-events: auto; /* Permite la interacción con las flechas */
+}
+.rslides img {
+    width: 100%;          /* Asegura que las imágenes ocupen todo el ancho disponible */
+    height: 500px;        /* Fija la altura de las imágenes */
+    object-fit: cover;
+}
+
+/* Estilo para el título y el texto del contenedor */
+.slide h1 {
+    display: flex;
+    /* flex-direction: end; */
+    align-items: end;
+    font-family: var(--letrati);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--grisdoscua);
+    margin-bottom: 10px;
+}
+
+.slide p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    
+    background-color: var(--dorado);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Contenedor con el texto sobre la imagen */
+.sd-cont {
+    /* display: flex;
+    align-content: space-between; */
+    position: absolute;
+    top: 50%;               /* Mantiene el contenedor verticalmente centrado */
+    right: 20px;            /* Coloca el contenedor 20px desde el borde derecho */
+    transform: translateY(-50%); /* Alinea verticalmente el contenedor */
+    /* background-color: rgba(245, 245, 245, 0.8); */
+    padding: 20px;
+    max-width: 60%;         /* Puedes ajustar el tamaño máximo del contenedor */
+    text-align: left;       /* Alinea el texto a la izquierda */
+    color: var(--a2);
+    z-index: 2;
+    border-radius: 8px;
+}
+/* about */
+/* Sección ABOUT */
+#about {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.contenedor-text {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    background-image: url('imagenes/tipos-de-abogados.webp');
+    background-size: cover; /* Asegura que la imagen cubra el área */
+    background-position: center; /* Centra la imagen */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px; /* Añade bordes redondeados */
+    clip-path: polygon(10% 0%, 90% 0%, 100% 90%, 0% 90%); /* Recorta la parte inferior en forma de trapecio */
+}
+
+/* Pseudo-elemento para el filtro negro */
+.contenedor-text::after {
+    content: ''; /* Es necesario para crear el pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con transparencia */
+    border-radius: 10px; /* Asegura que el filtro tenga los mismos bordes redondeados */
+    clip-path: inherit; /* Mantiene el mismo recorte que el contenedor */
+    z-index: 1; /* Pone el filtro por encima de la imagen */
+}
+
+.contenedor-text > * {
+    position: relative;
+    z-index: 2; /* Pone el contenido encima del filtro */
+}
+
+
+
+
+.cuadro1 {
+    margin-bottom: 20px;
+}
+
+.cuadro1 h3 {
+    font-size: 2.5rem;
+    color: var(--a2);
+}
+
+.cuadro1 .highlight {
+    color: var(--dorado); /* Color dorado para resaltar el texto */
+}
+
+.cuadro2 {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: var(--gris);
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+.boton {
+    margin-top: 20px;
+}
+
+.contact-button {
+    background-color: var(--dorado);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--a2); /* Cambia el color del botón al pasar el ratón */
+}
+
+/* Modal */
+.modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-align {
+    text-align: right;
+}
+
+.close-icon {
+    font-size: 2rem;
+    color: var(--gris);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-icon:hover {
+    color: var(--dorado); /* Color dorado cuando pasa el ratón */
+}
+
+.modal-content h1 {
+    font-size: 2rem;
+    color: var(--a2);
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: var(--gris);
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: --negro;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--dorado);
+}
+
+.send-button {
+    background-color: var(--dorado);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: var(--a2); /* Cambia el color al pasar el ratón */
+}
+
+/* Estilos de visibilidad para el modal */
+.modal-background.show {
+    display: flex; /* Muestra el modal cuando se activa */
+}
+
+/* servicio */
+#services
+{
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+#services h2{ 
+    font-family: var(--letrati);
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--grisdoscua);
+}
+.serv-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 30px;
+    justify-items: center; /* Centra los artículos en cada celda */
+    transition: all 0.3s ease-in-out;
+}
+
+.sev{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px); /* Los artículos comenzarán desplazados hacia abajo */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transición de transformaciones */
+}
+
+/* Cuando el artículo sea visible, se mueve hacia su posición original */
+.sev.visible {
+    opacity: 1;
+    transform: translateY(0); /* Se mueve hacia su posición original */
+}
+
+.sev i {
+    font-size: 2.5rem;
+    color: var(--gris);
+    margin-bottom: 20px;
+}
+
+.sev h3 {
+    font-family: var(--letrati);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--grisdoscua);
+}
+
+.sev p {
+    
+    font-size: 1rem;
+    color: var(--mora);
+}
+
+/* Efecto de escala y transformación al pasar el mouse */
+.sev:hover {
+    color: rgba(127, 235, 27, 0.1);
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el cambio */
+}
+/* carusel */
+/* parte de carrousel */
+/* Contenedor general del carrusel */
+#carousel {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor disponible */
+    max-width: 100%; /* Evita que el carrusel exceda el ancho disponible */
+    display: flex;
+    flex-direction: column; /* Los elementos internos se apilan en columna */
+    margin: 0 auto; /* Centrado horizontal */
+    position: relative;
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+  }
+  
+  /* Contenedor de las diapositivas */
+  #slide-container {
+    scroll-snap-type: x mandatory; /* Activa el "snap" al desplazarse horizontalmente */
+    overflow-x: auto; /* Permite desplazamiento horizontal */
+    overflow-y: hidden; /* Oculta el desplazamiento vertical */
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px; /* Espacio entre diapositivas */
+    color: #000;
+    -webkit-overflow-scrolling: touch; /* Habilita desplazamiento suave en dispositivos táctiles */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    border: 0.5px black solid; /* Borde negro alrededor del contenedor de diapositivas */
+  }
+  
+  /* Contenedor externo del carrusel */
+  .Contenedor {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 100%; /* Evita que el contenedor sobrepase el ancho disponible */
+    background: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    display: flex;
+    gap: 20px; /* Espacio entre elementos internos */
+  }
+  
+  /* Estilos de cada diapositiva */
+  .slide2 {
+    padding: 20px;
+    scroll-snap-align: center; /* Alinea la diapositiva en el centro del contenedor al hacer scroll */
+    position: relative;
+    min-width: 100%; /* Cada diapositiva ocupa todo el ancho del contenedor */
+    text-align: center;
+  }
+  
+  /* Estilos para las imágenes dentro de cada diapositiva */
+  .slide2 img {
+    width: 60%;             /* Ajusta el tamaño de la imagen al 60% del contenedor */
+    max-width: 200px;       /* Ancho máximo de la imagen */
+    max-height: 150px;      /* Altura máxima de la imagen */
+    object-fit: cover;      /* Ajusta la imagen sin deformarla */
+    margin-bottom: 10px;    /* Espacio inferior */
+    border-radius: 8px;     /* Bordes redondeados para las imágenes */
+    clip-path: circle(50%); /* Aplica el clip-path circular */
+    display: block;         /* Elimina posibles márgenes adicionales */
+    margin-left: auto;      /* Centra la imagen horizontalmente */
+    margin-right: auto;
+  }
+  
+  /* Encabezado principal de la sección de perfil */
+  .perfil h2 {
+    font-family: var(--letrati);
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  /* Subtítulo de la sección de perfil */
+  .perfil h3 {
+    font-family: var(--letrati);
+    color: var(--a2); /* Color de texto azul */
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  /* Descripción de la sección de perfil */
+  .perfil p {
+    text-align: center;
+    font-size: 1.2em;
+    color:var(--mora); /* Color de texto gris oscuro */
+  }
+  
+  /* Contenedor de los botones de navegación del carrusel */
+  .slide-buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Estilos para los botones de navegación (flechas) */
+  .arrow {
+    background-color: var(--gris); /* Fondo amarillo */
+    border: 0.2px solid black;
+    color: var(--blaco); /* Texto negro */
+    text-decoration: none; /* Elimina el subrayado en enlaces */
+    cursor: pointer;
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 1.5em; /* Tamaño del texto */
+    margin: 0 5px; /* Espacio entre botones */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+  }
+  
+  .arrow:hover {
+    background-color: #ddd; /* Cambia el fondo al pasar el cursor */
+  }
+  
+  /* Indicadores opcionales de la diapositiva (barra de progreso) */
+  .slide-indicator {
+    display: inline-block;
+    width: 50px; /* Ancho de cada indicador */
+    height: 10px; /* Altura de cada indicador */
+    background-color: #ddd; /* Fondo gris claro */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+  }
+  
+  /* Cambios de color para el indicador activo y en hover */
+  .slide-indicator.active,
+  .slide-indicator:hover {
+    background-color: #aaa; /* Fondo gris oscuro */
+  }
+  /* GALLERIA */
+  .contenedor3 {
+    background-color: f5f5f5;
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.contenedor_fotos a {
+    filter: brightness(1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.contenedor_fotos a:hover {
+    filter: brightness(0.5);
+}
+.contenedor_fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual ancho */
+    grid-template-rows: repeat(2, 1fr); /* Crea 2 filas de igual alto */
+    gap: 30px; /* Espacio entre las fotos */
+    padding: 10px;
+}
+
+.contenedor_fotos figure {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.contenedor_fotos figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Estilos para la sección de información */
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info h3 span {
+    color: var(--dorado);
+    font-family: var(--letrati);
+}
+
+.info p {
+    margin: 20px 0;
+    line-height: 1.5;
+    color: #666;
+}
+
+.join-btn {
+    background-color: var(--dorado);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* VIDEO */
+/* Contenedor general de la sección */
+.contenedor4 {
+    background-color: #f5f5f5; /* Fondo claro */
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a pantallas más pequeñas */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Estilo para la sección de información del video */
+.info_video {
+    flex: 1; /* La información ocupa el mismo espacio que el video */
+    max-width: 500px; /* Tamaño máximo */
+    margin-right: 20px;
+    text-align: left;
+}
+
+.info_video h2 {
+    font-size: 2rem; /* Tamaño del título */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info_video h3 span {
+    font-weight: bold;
+    color: #007bff; /* Color para el subtítulo */
+}
+
+.info_video p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Contenedor del video */
+.cont_video {
+    flex: 1; /* El video ocupa el mismo espacio que el texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; /* Máximo ancho para el video */
+}
+
+.cont_video iframe {
+    width: 100%; /* Hace que el video ocupe todo el espacio disponible */
+    max-width: 560px; /* Ancho máximo del iframe */
+    height: 315px; /* Altura fija del iframe */
+    border-radius: 8px; /* Bordes redondeados */
+}
+/* ACORDEON */
+/* Acordeon */
+/* Container Styling */
+.contenedor2 {
+    display: flex; /* Organiza los hijos en fila */
+    gap: 20px; /* Espacio entre las secciones */
+    padding: 20px;
+}
+
+/* FAQ Section */
+.contenido_fre {
+    flex: 2; /* Ocupa más espacio que Skills */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contenido_fre h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.acorde {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.acor_titulo {
+    padding: 15px 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.acor_titulo h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.acor_titulo i {
+    font-size: 20px;
+    color: blue;
+}
+
+.acor_contenido {
+    display: none;
+    padding: 15px 20px;
+    color: #333;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.acor_contenido p {
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+.skills {
+    flex: 1; /* Ocupa menos espacio que FAQ */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-bar div {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.legal-research {
+    width: 90%;
+    background-color: #007BFF;
+}
+
+.contract-drafting {
+    width: 65%;
+    background-color: #28A745;
+}
+
+.client-advocacy {
+    width: 100%;
+    background-color: #FFC107;
+}
+/* Parallax Background */
+.fondopr {
+    background-image: url('imagenes/legalor-bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija el fondo para el efecto parallax */
+    background-position: center;
+    height: 900px; /* Altura del contenedor */
+    position: relative; /* Para poder colocar el contenido encima */
+}
+
+/* Contenedor de contenido */
+.fond {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido se muestre encima del fondo */
+    padding: 50px 20px; /* Un poco de espaciado para el contenido */
+    color: #fff; /* Color del texto para que contraste */
+    text-align: center; /* Centra el contenido */
+    max-width: 500px; /* Limita el ancho del contenido */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Efecto de parallax en el texto */
+.fond h1 {
+    font-size: 2.5rem; /* Ajustar el tamaño del título */
+    margin-bottom: 15px; /* Menos espacio entre el título y el párrafo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
+
+/* Efecto de parallax en el texto */
+.fond p {
+    font-size: 1rem; /* Ajustar el tamaño del párrafo */
+    line-height: 1.6;
+    max-width: 700px; /* Limitar el ancho del párrafo */
+    margin: 0 auto; /* Centrar el párrafo */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Efecto de parallax en la imagen */
+.fond figure {
+    position: relative;
+    z-index: 3; /* Asegura que la imagen se muestre encima del fondo */
+    margin-bottom: 20px; /* Espaciado más pequeño debajo de la imagen */
+    max-width: 100px; /* Limitar el ancho máximo de la imagen */
+    margin-left: auto; /* Centrar la imagen */
+    margin-right: auto; /* Centrar la imagen */
+}
+
+.fond img {
+    width: 100%; /* Asegura que la imagen sea responsiva */
+    max-width: 100%; /* Limitar el ancho al máximo especificado en figure */
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Efecto al pasar el ratón sobre la imagen */
+.fond img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+/* Efecto de parallax al hacer scroll */
+@keyframes scrollEffect {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* Aplicar movimiento suave de parallax al contenido */
+.fond h1, .fond p, .fond figure {
+    animation: scrollEffect 0.5s ease-out infinite alternate;
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-left h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-middle h2, .footer-right h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-middle p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul li a:hover {
+    color: #f39c12;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f39c12;
+}
+.arriba {
+    position: fixed;  /* Fija el botón en la pantalla */
+    bottom: 30px;  /* Coloca el botón a 30px desde el fondo */
+    right: 30px;  /* Coloca el botón a 30px desde la derecha */
+    background-color: var(--negro);  /* Color de fondo */
+    color: white;  /* Color del texto */
+    font-size: 24px;  /* Tamaño de la flecha */
+    width: 50px;  /* Ancho del botón */
+    height: 50px;  /* Alto del botón */
+    border: none;  /* Sin borde */
+    border-radius: 50%;  /* Hacer el botón redondeado */
+    display: flex;  /* Usamos Flexbox para centrar el contenido */
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;  /* Centrado vertical */
+    cursor: pointer;  /* Cambia el cursor cuando pasa sobre el botón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Sombra para dar profundidad */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Transición para color y animación */
+}
+
+.arriba:hover {
+    background-color:var(--axul);  /* Cambio de color cuando el ratón pasa sobre el botón */
+    transform: scale(1.1);  /* Agranda el botón al pasar el ratón */
+}
+
+.arriba:focus {
+    outline: none;  /* Elimina el contorno cuando se hace clic en el botón */
+}

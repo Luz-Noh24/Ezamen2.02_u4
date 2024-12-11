@@ -1,0 +1,27 @@
+@media (max-width: 430px) {
+    /* Cambios en el contenedor principal */
+    .nave {
+        gap: 5px; /* Reducir el espacio entre los elementos */
+    }
+
+    /* Cambios en la información de contacto */
+    .contact-info {
+        flex-direction: column; /* Apilar los elementos en una sola columna */
+        gap: 10px; /* Menos espacio entre los elementos */
+    }
+
+    .contact-info span {
+        flex-direction: column; /* Apilar los íconos y el texto */
+        gap: 5px; /* Reducir el espacio entre íconos y texto */
+    }
+
+    /* Cambios en los íconos sociales */
+    .social-icons {
+        justify-content: center; /* Centrar los íconos */
+        gap: 15px; /* Reducir el espacio entre los íconos */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Reducir el tamaño de los íconos */
+    }
+}

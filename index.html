@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Legalor - Legal Services</title>
+     <!-- fontaweson -->
+     <script src="https://kit.fontawesome.com/9e309eb9ec.js" crossorigin="anonymous"></script>
+     <!-- googlefont -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+     <!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <!-- fancybox -->
+     <script src="js\fancybox.js"></script>
+     <!-- slide -->
+     <script src="js\responsiveslides.min.js"></script>
+     <!-- animaciónes -->
+     <script src="js\wow.min.js"></script>
+     <!-- carusel -->
+     <script src="js\carousel.js"></script>
+    <!-- css compu -->
+     <link rel="stylesheet" href="style.css">
+     <!-- css moviñ -->
+     <link rel="stylesheet" href="movil.css">
+     <!-- css tableta -->
+     <link rel="stylesheet" href="tableta.css">
+     <!-- css fancybox -->
+     <link rel="stylesheet" href="estilos\fancybox.css">
+     <!-- animate -->
+     <link rel="stylesheet" href="estilos/animate.css">
+</head>
+<body>
+    <header>
+      <section class="nave ">
+        <section class="contact-info ancho">
+            <span><i class="fa fa-phone"></i> +800 123 45 67</span>
+            <span><i class="fa fa-envelope"></i> info@legalor.com</span>
+            <span><i class="fa fa-map-marker"></i> 121 Wallstreet Street, New York, USA</span>
+          </section>
+          <section class="social-icons">
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </section>
+      </section>
+        <section class="nave2">
+            <div class="logo">
+                <figure>
+                    <img src="imagenes/legator-logo.webp" alt="Logo">
+                </figure>
+                <a href="#" id="icono"><i class="fas fa-bars"></i></a>
+            </div>
+            <nav class="ancho" id="caja">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#practice">PRACTICE AREAS</a></li>
+                    <li><a href="#contacts">CONTACTS</a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <br>
+   <!-- Slider -->
+   <section id="home" class="slide">
+    <ul class="rslides">
+        <li>
+            <img src="imagenes/slide0.jpg" alt="">
+            <div class="sd-cont">
+                <!-- Título principal en el Hero -->
+                <h1>Reputation. Respect. Result.</h1>
+                <p>We know what it takes to defend your rights. With over 20 years of experience, we are dedicated to helping you win the case. Contact us for more details!</p>
+                <!-- Botón que redirige a la sección de membresía -->
+                <a href="#" class="btn">Free consult</a>
+            </div>
+        </li>
+        <li>
+            <img src="imagenes/slide1.jpg" alt="">
+        </li>
+        <li>
+            <img src="imagenes/slide2.jpg" alt="">
+        </li>
+        <li>
+            <img src="imagenes/slide3.jpg" alt="">
+        </li>
+    </ul>
+    <!-- Botones de navegación (flechas) -->
+    <a href="#" class="rslides_nav rslides1_nav prev"><i class="fa fa-chevron-left"></i></a>
+    <a href="#" class="rslides_nav rslides1_nav next"><i class="fa fa-chevron-right"></i></a>
+</section>
+<!-- ABOUT modal -->
+ <section id="about"class="ancho">
+   <div class="contenedor-text">
+    <div class="cuadro1">
+        <h3><span class="highlight">Why You Can Trust Legalor, Our Values</span></h3>
+    </div>
+    <div class="cuadro2">
+        <p>
+            We value justice, honesty and time. We are always at your service as we are in charge of your defence. Any detail will be noticed and it can be essential for your case.
+                        During our work we gathered a team of devoted experts with rich experience in juridical help. We put a great emphasis on business law, because in today’s rapidly-changing environment, people require assistance in business spheres. Our experience allows us to be confident and stand by our words.
+        </p>
+    </div>
+    <section class="boton">
+     <button class="contact-button">READ MORE</button>
+    </section>
+   </div>
+ </section>
+ <!-- form modal -->
+  <section id="modal" class="modal-background">
+    <div class="modal-content">
+        <div class="close-align">
+            <i id="close-modal" class="close-icon fas fa-times-circle"></i> <!-- Ícono para cerrar el modal -->
+        </div>
+        <h1>Contact Us</h1> <!-- Título del modal de contacto -->
+        <p>If you have any questions concerning our service, please fill out the contact form below.</p>
+        <form action="">
+            <input type="text" class="input-field" name="name" placeholder="Name*" required> <!-- Campo para ingresar el nombre -->
+            <input type="email" class="input-field" name="email" placeholder="Email*" required> <!-- Campo para ingresar el correo electrónico -->
+            <textarea class="input-field" name="message" placeholder="Message"></textarea> <!-- Campo para ingresar un mensaje -->
+            <button type="submit" class="send-button">Send</button> <!-- Botón para enviar el formulario -->
+        </form>
+    </div>
+  </section>
+<!-- SERVICIOS -->
+<section id="services" class="servicio">
+    <h2>SERVICES</h2>
+    <div class="serv-cont">
+        <article class="sev">
+          <i class="fa-solid fa-house"></i>
+          <h3>Family Law</h3>
+          <p>We aim to support families in resolving their own disputes. We ensure professional consultancy and result.</p>
+        </article>
+  
+        <article class="sev">
+          <i class="fa-solid fa-briefcase"></i>
+          <h3>Business Law</h3>
+          <p> Professional help with financial, commercial, tax disputes and other complex business issues.</p>
+        </article>
+  
+        <article class="sev">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>Civil Litigation</h3>
+          <p>Your civil rights will be defended and represented on the highest level with the best outcome.</p>
+        </article>
+  
+        <article class="sev">
+          <i class="fa-solid fa-umbrella"></i>
+          <h3>Insurance Defence</h3>
+          <p>We understand how to handle the complex statutory and contractual issues that frequently arise in claims.</p>
+        </article>
+  
+        <article class="sev">
+          <i class="fa-solid fa-house-chimney-crack"></i>
+          <h3>Land & Asset</h3>
+          <p>
+            Lagalor offers consultancy services and asset management, bringing a new vision to the world of investment.</p>
+        </article>
+  
+        <article class="sev">
+          <i class="fa-solid fa-coins"></i>
+          <h3>Finance Law</h3>
+          <p>
+            We work in an open dialogue with you in order to devise the strategy which will best serve your inter</p>
+        </article>
+    </div>
+  </section>
+<!-- Practicas -->
+<section id="practice">
+    <!-- carusel -->
+    <div class="Contenedor">
+        <!-- Sección de información sobre el equipo -->
+        <section class="perfil">
+            <h2>OUR TEAM</h2> <!-- Subtítulo de la sección -->
+            <h3>PROFESSIONAL</h3> <!-- Título principal sobre el equipo de reparación -->
+            <p>
+                The team of lawyers is a group of professionals specialized in various areas of law who collaborate in a coordinated manner to offer comprehensive legal solutions. Each member brings their experience and knowledge in different branches, such as criminal, civil, corporate or labor law, which allows complex cases to be addressed from various perspectives. Effective communication, teamwork and the ability to adapt are essential to achieve the best results for the benefit of clients.
+            </p>
+            <!-- Botones de navegación para el carrusel -->
+            <div class="slide-buttons">
+                <a id="back-button" class="arrow">&larr;</a> <!-- Botón de retroceso en el carrusel -->
+                <a id="forward-button" class="arrow">&rarr;</a> <!-- Botón de avance en el carrusel -->
+            </div>
+        </section>
+
+        <!-- Carrusel de perfiles del equipo -->
+        <div id="carousel" class="caro">
+            <!-- Contenedor de las diapositivas del carrusel -->
+            <div id="slide-container" class="slide-container">
+                
+                <!-- Diapositiva 1 del carrusel -->
+                <div class="slide2" data-slideindex="0">
+                    <article>
+                        <img src="imagenes/foto1.jpg" alt="John Tuff" />
+                        <h3>John Tuff</h3>
+                        <p>Specializes in defending and advising on cases involving serious and minor crimes, including homicides, theft, and financial crimes.</p>
+                    </article>
+                </div>
+
+                <!-- Diapositiva 2 del carrusel -->
+                <div class="slide2" data-slideindex="1">
+                    <article>
+                        <img src="imagenes/foto2.jpg" alt="Frank McMillan" />
+                        <h3>Frank McMillan</h3>
+                        <p>Experienced in resolving conflicts related to contracts, inheritances, divorces, and personal injury cases.</p>
+                    </article>
+                </div>
+
+                <!-- Diapositiva 3 del carrusel -->
+                <div class="slide2" data-slideindex="2">
+                    <article>
+                        <img src="imagenes/foto3.jpg" alt="John Smith" /> 
+                        <h3>John Smith</h3> 
+                        <p>An expert in the creation, management, and restructuring of companies, mergers and acquisitions, as well as providing legal advice for businesses.</p>
+                    </article>
+                </div>
+                
+                <!-- Diapositiva 4 del carrusel -->
+                <div class="slide2" data-slideindex="3">
+                    <article>
+                        <img src="imagenes/foto4.jpg" alt="John Aveiro" />
+                        <h3>John Aveiro</h3> 
+                        <p>Specializes in resolving labor disputes, union negotiations, and advising both employees and employers on rights and obligations.</p> 
+                    </article>
+                </div>
+
+                <!-- Diapositiva 5 del carrusel -->
+                <div class="slide2" data-slideindex="4">
+                    <article>
+                        <img src="imagenes/foto5.jpg" alt="John Morgan" /> 
+                        <h3>John Morgan</h3> 
+                        <p>Focuses on handling cases related to divorce, child custody, alimony, and prenuptial agreements, offering compassionate support through sensitive legal matters.</p>
+                    </article>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- GALERIA -->
+    <section class="contenedor3">
+        <div class="contenedor_fotos">
+    
+            <a data-fancybox="gallery" data-src="imagenes\gal1.jpg" data-caption="FOTO 1 GALERIA">
+              <figure>
+                <img src="imagenes\gal1.jpg" alt="" />
+              </figure>
+            </a>
+        
+            <a data-fancybox="gallery" data-src="imagenes\gal2.jpg" data-caption="FOTO 2 GALERIA">
+              <figure>
+                <img src="imagenes\gal2.jpg" alt="" />
+              </figure>
+            </a>
+        
+            <a data-fancybox="gallery" data-src="imagenes\gal3.jpg" data-caption="FOTO 3 GALERIA">
+              <figure>
+                <img src="imagenes\gal3.jpg" alt="" />
+              </figure>
+            </a>
+        
+            <a data-fancybox="gallery" data-src="imagenes\gal4.jpg" data-caption="FOTO 4 GALERIA">
+              <figure>
+                <img src="imagenes\gal4.jpg" alt="" />
+              </figure>
+            </a>
+        </div>
+        <div class="info">
+            <h2>GALLERY</h2>
+            <h3><span>LEGATOR</span></h3>
+            <p> we understand that navigating legal challenges can be daunting. That’s why we’re committed to providing personalized, strategic, and effective legal solutions to protect your rights and achieve the best outcomes for your unique situation.
+    
+              Our team of experienced attorneys is dedicated to guiding you through every step of the legal process with clarity, compassion, and professionalism. Whether you’re facing a personal legal issue or a complex business matter, we work tirelessly to advocate for your interests and deliver results.</p>
+            <a href="#" class="join-btn">JOIN NOW</a>
+        </div>
+    </section>
+    <!-- VIDEO -->
+    <section class="contenedor4">
+        <section class="info_video">
+          <h2>VIDETION</h2>
+          <h3><span>LEGATOR</span></h3>
+          <p>"We face legal challenges head-on, putting our expertise to the test. Here we not only represent our clients, but we also put our capabilities to the test by challenging our own limits."</p>
+        </section>
+        <section class="cont_video">
+          <!-- Asegúrate de que el video esté disponible para ser incrustado -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/v0kYfUhFHuQ?si=9oGg-3VZRBMDHvmX&amp;start=16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+      </section>
+</section>
+<section id="contacts">
+ <!-- acordeón -->
+ <section class="contenedor2">
+    <div class="contenido_fre">
+      <h1>FREQUENTLY ASK QUESTIONS</h1>
+        <div class="acorde ancho">
+            <div class="acor_titulo">
+                <h2> How much does it cost to hire a lawyer?</h2>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <article class="acor_contenido">
+                <p>
+                  The cost depends on the type of case, the lawyer’s experience, and the time required. Some lawyers charge hourly rates, while others offer flat fees or work on a contingency basis. It’s important to discuss fees upfront.
+                </p>
+            </article>
+        </div>
+        <div class="acorde ancho">
+          <div class="acor_titulo">
+              <h2>How long will my case take?</h2>
+              <i class="fa-solid fa-plus"></i>
+          </div>
+          <article class="acor_contenido">
+              <p>
+                The duration of your case depends on multiple factors, including the type of case, its complexity, the legal procedures involved, and how quickly all parties respond to filings or requests. For example, straightforward cases like drafting a legal document or negotiating a basic agreement might take just a few weeks, while complex matters such as litigation, divorces, or business disputes could take months or even years. Additionally, court schedules, the availability of witnesses, and the need for additional evidence or expert opinions can impact timelines. It’s also worth noting that some cases face delays due to court backlogs or unexpected complications.
+              </p>
+              <p>
+                While I’ll provide you with an estimated timeline based on my experience with similar cases, I’ll make sure to keep you updated at every stage and work to resolve your matter as efficiently as possible.
+              </p>
+          </article>
+      </div>
+      <div class="acorde ancho">
+        <div class="acor_titulo">
+            <h2>How strong is my case?</h2>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <article class="acor_contenido">
+            <p>
+              The strength of your case depends on the specific facts, the evidence available, and how the law applies to your situation. I will need to carefully review all documents, witness statements, and other details to assess its merits. It’s important to remember that even strong cases can face challenges, such as procedural issues, opposing arguments, or unforeseen evidence from the other side. I’ll provide you with an honest assessment and discuss any weaknesses or risks so we can work on building the best possible strategy for your case.
+            </p>
+        </article>
+    </div>
+    <div class="acorde ancho">
+        <div class="acor_titulo">
+            <h2>What does the initial consultation include?</h2>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <article class="acor_contenido">
+            <p>
+              The initial consultation is an opportunity for us to discuss the basics of your case. I’ll ask questions to understand your situation, identify key legal issues, and determine how I might be able to assist you. It’s also a chance for you to ask me questions about my experience, fees, and the legal process. While we may not delve into full legal strategies at this stage, I’ll provide you with an overview of your options and the next steps. This meeting helps us decide whether we’re the right fit to work together.
+            </p>
+        </article>
+    </div>
+    </div>
+    <div class="skills">
+      <h2><i class="fas fa-balance-scale"></i> Our Expertise</h2>
+      <p>We pride ourselves on our extensive expertise in key areas of legal practice. Our team is dedicated to delivering results with precision, efficiency, and care. Here are some of our core competencies:</p>
+      <div class="skill">
+          <div class="skill-label"><i class="fas fa-gavel"></i> Legal Research (90%)</div>
+          <div class="skill-bar">
+              <div class="legal-research"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <div class="skill-label"><i class="fas fa-file-contract"></i> Contract Drafting (80%)</div>
+          <div class="skill-bar">
+              <div class="contract-drafting"></div>
+          </div>
+      </div>
+      <div class="skill">
+          <div class="skill-label"><i class="fas fa-bullhorn"></i> Client Advocacy (95%)</div>
+          <div class="skill-bar">
+              <div class="client-advocacy"></div>
+          </div>
+      </div>
+    </div>
+   </section>
+   <!-- FONDO CON MUCHO TEXTO-->
+<section class="fondopr">
+    <article class="wow animate__animated animate__fadeInDown fond">
+      <h1>Satisfied Client Stories</h1>
+      <figure>
+        <img src="imagenes\legator-testi.webp" alt="">
+      </figure>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequuntur maxime nostrum. Ipsa sit quidem odio assumenda molestiae laudantium id, nulla aperiam et at illo laborum architecto, ad eum quasi?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab quis laborum necessitatibus. In ducimus corrupti esse dolor quas quo, iusto officia at facilis officiis enim laboriosam tempore sed voluptas. Laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum veritatis eligendi. Error nulla, perferendis eveniet voluptates ipsum repellendus. Accusamus atque esse praesentium natus! Cumque odio omnis quidem suscipit at.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error amet, doloremque id assumenda voluptatem alias dolores quia eius porro ipsa, ipsum laudantium hic quidem tempora. Hic dolor fugit dolorem culpa?
+      </p>
+    </article>
+    </section>
+</section>
+<!-- footer -->
+<footer>
+    <section class="footer-container">
+        <section class="footer-left">
+            <h1>Legalor</h1>
+            <p>Your reliable protection in jurisprudence. Our qualification provides the opportunity solve the problems of any complexity.</p>
+        </section>
+        <section class="footer-middle">
+            <h2>Contact Info</h2>
+            <p>4096 N Highland St, Arlington VA 32101, USA</p>
+            <p>Email: legalor@demolink.org</p>
+            <p>Phone: 800 1234 56 78</p>
+            <p>Mon-Thu: 9:30 – 21:00</p>
+            <p>Fri: 6:00 – 21:00</p>
+            <p>Sat: 10:00 – 15:00</p>
+        </section>
+        <section class="footer-right">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <h2>Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Be the first to find out about exclusive deals, the latest Lookbooks, and top trends.</p>
+        </section>
+    </section>
+    <section class="footer-bottom">
+        <p>Zemez ©. All rights reserved.</p>
+        <section class="social-icons">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </section>
+        <button class="arriba" onclick="scrollToTop()">↑</button>
+    </section>
+  </footer>
+<!-- funciones -->
+<script>
+    // SCRIPT PARA EL MENU DESPLEGABLE
+$("#icono").click(function () {
+    $("#caja").slideToggle();
+});
+
+// Inicializar el slider
+$(function() {
+  $(".rslides").responsiveSlides({
+    auto: true,         // Hace que el slider cambie automáticamente
+    speed: 600,         // Velocidad de la animación
+    pager: false,       // Desactiva los números de paginación
+    nav: true,          // Habilita las flechas de navegación
+    pause: true         // Pausa la animación cuando el cursor pasa por encima
+  });
+});
+// Modal
+// Abre el modal
+const openModalButton = document.querySelector('.contact-button');
+const modal = document.getElementById('modal');
+const closeModalButton = document.getElementById('close-modal');
+
+// Mostrar el modal cuando se hace clic en el botón "READ MORE"
+openModalButton.addEventListener('click', () => {
+    modal.classList.add('show');
+});
+
+// Cerrar el modal cuando se hace clic en el ícono de cierre
+closeModalButton.addEventListener('click', () => {
+    modal.classList.remove('show');
+});
+
+// Cerrar el modal si el usuario hace clic fuera del contenido
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.classList.remove('show');
+    }
+});
+
+// Crear un observer para detectar cuando los elementos están visibles
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        // Si el elemento está visible
+        if (entry.isIntersecting) {
+            // Añadir la clase 'visible' para activar la animación
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Deja de observar el elemento una vez que está visible
+        }
+    });
+}, {
+    threshold: 0.5 // 50% del elemento debe estar visible para que se active
+});
+
+// Seleccionamos todos los elementos '.sev' que queremos observar
+const services = document.querySelectorAll('.sev');
+services.forEach(service => {
+    observer.observe(service); // Empezamos a observar cada uno
+});
+document.addEventListener("DOMContentLoaded", function() {
+  // Selecciona el contenedor del carrusel y las diapositivas con la clase correcta
+  const slideContainer = document.getElementById('slide-container');
+  const slides = document.querySelectorAll('.slide2'); // Asegúrate de usar '.slide2' en lugar de '.slide'
+  
+  let currentIndex = 0; // Índice de la diapositiva actual
+  
+  // Función para actualizar la vista del carrusel
+  function updateCarousel() {
+    // Desplaza el contenedor al índice actual de la diapositiva
+    slideContainer.scrollTo({
+      left: slides[currentIndex].offsetLeft,
+      behavior: 'smooth' // Desplazamiento suave
+    });
+  }
+
+  // Función para ir a la siguiente diapositiva
+  function goToNextSlide() {
+    if (currentIndex < slides.length - 1) {
+      currentIndex++; // Avanza al siguiente índice
+    } else {
+      currentIndex = 0; // Si está en la última, vuelve a la primera
+    }
+    updateCarousel();
+  }
+
+  // Función para ir a la diapositiva anterior
+  function goToPrevSlide() {
+    if (currentIndex > 0) {
+      currentIndex--; // Retrocede al índice anterior
+    } else {
+      currentIndex = slides.length - 1; // Si está en la primera, va a la última
+    }
+    updateCarousel();
+  }
+
+  // Asocia las funciones a los botones de navegación
+  document.getElementById('forward-button').addEventListener('click', goToNextSlide);
+  document.getElementById('back-button').addEventListener('click', goToPrevSlide);
+
+  // Inicializa el carrusel en la primera diapositiva
+  updateCarousel();
+});
+  // galeria
+  // galeria
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    });
+
+ // Acordeón
+ $(".acor_titulo").click(function(){
+            var t = $(this);
+            var tp = t.next();
+            tp.slideToggle();
+        });
+    
+//animaciones
+new WOW().init();
+window.onscroll = function() {
+    var scrollTopButton = document.querySelector(".arriba");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollTopButton.style.display = "block"; // Mostrar el botón
+    } else {
+      scrollTopButton.style.display = "none"; // Ocultar el botón cuando se está en la parte superior
+    }
+  };
+
+  // Función para hacer scroll hacia arriba suavemente
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Desplazamiento suave hacia el inicio
+    });
+  }
+
+</script>
+</body>
+</html>
