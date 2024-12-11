@@ -732,8 +732,6 @@ body
     border-radius: 8px; /* Bordes redondeados */
 }
 /* ACORDEON */
-/* Acordeon */
-/* Container Styling */
 .contenedor2 {
     display: flex; /* Organiza los hijos en fila */
     gap: 20px; /* Espacio entre las secciones */

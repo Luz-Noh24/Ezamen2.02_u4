@@ -1,0 +1,294 @@
+@media (max-width: 768px) {
+    .nave {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        gap: 20px; /* Espacio mayor entre los elementos */
+    }
+
+    .contact-info {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        gap: 15px; /* Espaciado mayor entre los elementos */
+    }
+
+    .contact-info span {
+        justify-content: center; /* Centra los elementos en pantallas pequeñas */
+    }
+
+    .social-icons {
+        justify-content: center; /* Centra los íconos en pantallas pequeñas */
+        gap: 15px; /* Espaciado menor entre íconos */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Reduce el tamaño de los íconos */
+    }
+    /* Slide */
+.slide {
+    position: relative;
+    background-color: #f8f8f8;
+    height: 500px;  /* Asegúrate de que todas las imágenes tengan la misma altura */
+    overflow: hidden;
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estilo para las flechas de navegación */
+.rslides_nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    color: #fff; /* Color blanco */
+    z-index: 10;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.rslides_nav i {
+    font-size: 2em;
+    color: #fff;  /* Color blanco */
+    transition: color 0.3s ease;
+}
+
+/* Hover para cambiar color de las flechas */
+.rslides_nav:hover i {
+    color: var(--dorado);  /* Color dorado al pasar el ratón */
+}
+
+/* Posicionar la flecha izquierda */
+.rslides1_nav.prev {
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+/* Posicionar la flecha derecha */
+.rslides1_nav.next {
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+}
+
+/* Asegura que las flechas estén por encima del contenido */
+.rslides_nav {
+    display: hidden;
+    pointer-events: auto; /* Permite la interacción con las flechas */
+}
+.rslides img {
+    width: 100%;          /* Asegura que las imágenes ocupen todo el ancho disponible */
+    height: 500px;        /* Fija la altura de las imágenes */
+    object-fit: cover;
+}
+
+/* Estilo para el título y el texto del contenedor */
+.slide h1 {
+    display: flex;
+    /* flex-direction: end; */
+    align-items: end;
+    font-family: var(--letrati);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--grisdoscua);
+    margin-bottom: 10px;
+}
+
+.slide p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    
+    background-color: var(--dorado);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Contenedor con el texto sobre la imagen */
+.sd-cont {
+    /* display: flex;
+    align-content: space-between; */
+    position: absolute;
+    top: 50%;               /* Mantiene el contenedor verticalmente centrado */
+    right: 20px;            /* Coloca el contenedor 20px desde el borde derecho */
+    transform: translateY(-50%); /* Alinea verticalmente el contenedor */
+    /* background-color: rgba(245, 245, 245, 0.8); */
+    padding: 20px;
+    max-width: 60%;         /* Puedes ajustar el tamaño máximo del contenedor */
+    text-align: left;       /* Alinea el texto a la izquierda */
+    color: var(--a2);
+    z-index: 2;
+    border-radius: 8px;
+}
+.serv-cont {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+    gap: 20px; /* Reduce el espacio entre los elementos */
+}
+
+.sev {
+    padding: 15px; /* Reduce el padding de los servicios */
+    transform: translateY(20px); /* Menos desplazamiento al principio */
+}
+
+.sev i {
+    font-size: 2rem; /* Reduce el tamaño del icono */
+}
+
+.sev h3 {
+    font-size: 1.3rem; /* Reduce el tamaño del título */
+}
+
+.sev p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+}
+
+#services h2 {
+    font-size: 1.8rem; /* Ajusta el tamaño del título principal */
+}
+#carousel {
+    flex-direction: column;  /* Los elementos se apilan en columna */
+}
+
+/* Contenedor de las diapositivas */
+#slide-container {
+    flex-direction: column; /* Apilar las diapositivas verticalmente */
+    overflow-x: hidden; /* Ocultar el desplazamiento horizontal */
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+}
+
+/* Estilos para las diapositivas */
+.slide2 {
+    min-width: 100%; /* Cada diapositiva ocupará el 100% del ancho */
+}
+
+/* Estilos de las imágenes */
+.slide2 img {
+    width: 80%; /* Ajusta el tamaño de la imagen al 80% */
+    max-width: none; /* Elimina el ancho máximo */
+    max-height: 200px; /* Ajusta la altura máxima */
+}
+
+/* Ajustar el espacio entre las diapositivas */
+.Contenedor {
+    flex-direction: column; /* Los elementos internos se apilan en columna */
+    gap: 10px; /* Menos espacio entre los elementos */
+}
+
+/* Los botones de navegación pueden permanecer iguales o ajustarse */
+.slide-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Asegura que los botones estén centrados */
+}
+/* galeria */
+.contenedor3 {
+    flex-direction: column; /* Cambia la dirección a columna para adaptarse mejor a pantallas pequeñas */
+    gap: 10px; /* Reduce el espacio entre los elementos */
+  }
+
+  /* Ajuste para las fotos */
+  .contenedor_fotos {
+    grid-template-columns: 1fr; /* Muestra una sola columna en dispositivos pequeños */
+    grid-template-rows: auto;  /* Las filas se ajustarán al contenido */
+  }
+
+  .contenedor_fotos figure {
+    width: 100%; /* Ajusta las figuras para que ocupen el 100% del ancho disponible */
+    height: auto; /* Ajusta la altura de las imágenes según el contenido */
+  }
+
+  /* Estilos para la sección de información */
+  .info {
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .info h2, .info h3 {
+    font-size: 20px; /* Reduce el tamaño del texto */
+  }
+
+  .info p {
+    font-size: 1em; /* Ajusta el tamaño del texto */
+  }
+
+  .join-btn {
+    font-size: 14px; /* Reduce el tamaño del texto del botón */
+    padding: 8px 16px; /* Ajusta el padding para hacerlo más pequeño */
+  }
+  .contenedor4 {
+    flex-direction: column; /* Cambia la dirección a columna para apilar los elementos */
+    padding: 20px; /* Reduce el padding para que el contenido ocupe mejor el espacio */
+}
+
+/* Ajuste de la sección de información */
+.info_video {
+    max-width: 100%; /* Asegura que ocupe todo el espacio disponible */
+    margin-right: 0; /* Elimina el margen derecho */
+    text-align: center; /* Centra el texto */
+}
+
+.info_video h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+}
+
+.info_video h3 {
+    font-size: 1.2rem; /* Reduce el tamaño del subtítulo */
+}
+
+.info_video p {
+    font-size: 1rem; /* Ajusta el tamaño del párrafo */
+}
+
+/* Ajuste del contenedor del video */
+.cont_video {
+    max-width: 100%; /* El video ocupa todo el ancho disponible */
+    margin-top: 20px; /* Espacio adicional entre la información y el video */
+}
+
+.cont_video iframe {
+    width: 100%; /* Asegura que el video ocupe todo el espacio disponible */
+    height: 200px; /* Reduce la altura del video para ajustarlo mejor */
+}
+.contenedor2 {
+    flex-direction: column; /* Apila las secciones en columna */
+    padding: 10px;
+}
+
+.contenido_fre,
+.skills {
+    flex: 1; /* Ambos ocupan el mismo espacio en pantallas pequeñas */
+    margin-bottom: 20px; /* Añade espacio entre las secciones */
+}
+
+.contenido_fre h1,
+.skills h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño de los títulos */
+}
+
+.acor_titulo h2 {
+    font-size: 16px; /* Ajusta el tamaño del título en acordeón */
+}
+.footer-container {
+    flex-direction: column; /* Apila las secciones en columna */
+    align-items: center; /* Centra las secciones */
+}
+.footer-left, .footer-middle, .footer-right {
+    padding: 10px;
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+}
+.arriba {
+    top: 50%;  /* Coloca el botón verticalmente en el medio de la pantalla */
+    right: 30px;  /* Coloca el botón a la derecha */
+    left: auto;  /* Elimina cualquier valor a la izquierda */
+    transform: translateY(-50%);  /* Ajusta el botón para que se centre verticalmente */
+    bottom: auto;  /* Elimina la distancia desde el fondo */
+}
+}
