@@ -1,6 +1,6 @@
 @media (max-width: 430px) {
-    /* Cambios en el contenedor principal */
     .nave {
+        grid-template-columns: 1fr; /* Una sola columna en lugar de dos */
         gap: 5px; /* Reducir el espacio entre los elementos */
     }
 
@@ -24,4 +24,377 @@
     .social-icons a {
         font-size: 20px; /* Reducir el tamaño de los íconos */
     }
+    /* manu */
+    .nave2 {
+        flex-direction: column; /* Apila los elementos en una columna */
+        align-items: flex-start; /* Alinea el contenido al inicio */
+        padding: 10px; /* Ajusta el espaciado interno */
+    }
+
+    #icono {
+        display: block; /* Muestra el icono de hamburguesa en pantallas pequeñas */
+    }
+
+    .nave2 nav {
+        display: none; /* Esconde la barra de navegación por defecto en móvil */
+        width: 100%;
+    }
+
+    .nave2.nav-abierta nav {
+        display: flex; /* Muestra la barra de navegación si está abierta */
+        flex-direction: column; /* Coloca los elementos en columna */
+        background-color: var(--negro); /* Fondo negro para la barra */
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 10px 0;
+    }
+
+    .nave2 nav ul {
+        flex-direction: column; /* Cambia los elementos del menú a columna */
+        gap: 10px; /* Reduce el espacio entre los elementos */
+    }
+
+    .nave2 nav ul li a {
+        font-size: 14px; /* Ajusta el tamaño del texto en móvil */
+        text-align: left; /* Alinea los elementos a la izquierda */
+    }
+    .slide {
+        height: 300px; /* Reduce la altura del slider en móviles */
+    }
+
+    .rslides img {
+        height: 300px; /* Ajusta la altura de las imágenes */
+    }
+
+    /* Mantén el slider fijo en una imagen */
+    .rslides {
+        display: block; /* Asegúrate de que se muestre solo una imagen */
+    }
+
+    .rslides li {
+        display: none; /* Oculta todas las imágenes excepto la primera */
+    }
+
+    .rslides li:first-child {
+        display: block; /* Solo muestra la primera imagen */
+    }
+    .rslides_nav
+    {
+        display: none;
+    }
+    .sd-cont {
+        top: 70%; /* Baja el texto en pantallas pequeñas */
+        right: 10px; /* Reduce el espacio desde el borde derecho */
+        max-width: 90%; /* Permite que el texto ocupe más espacio horizontal */
+        padding: 10px; /* Reduce el espaciado interno */
+    }
+
+    .slide h1 {
+        display: flex;
+        justify-content: end;
+        font-size:14px; /* Reduce el tamaño del título */
+    }
+
+    .slide p {
+        font-size: 10px; /* Reduce el tamaño del texto */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Reduce el tamaño del texto del botón */
+        padding: 8px 15px; /* Ajusta el relleno del botón */
+    }
+    #about {
+        padding: 30px 0; /* Reduce el padding general */
+    }
+
+    .contenedor-text {
+        padding: 20px; /* Reduce el padding interno */
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);/* Ajusta la forma para pantallas pequeñas */
+        max-width: 90%; /* Limita el ancho del contenedor */
+    }
+
+    .contenedor-text::after {
+        border-radius: 8px; /* Reduce ligeramente los bordes redondeados */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem; /* Reduce el tamaño de los encabezados */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+        line-height: 1.5; /* Mejora la legibilidad */
+    }
+    .cuadro1 h3 {
+        font-size: 1.8rem; /* Reduce el tamaño del encabezado */
+        margin-bottom: 10px; /* Menos espacio inferior */
+    }
+
+    .cuadro2 {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+        padding: 0 10px; /* Reduce el padding lateral */
+        line-height: 1.6; /* Ajusta el espaciado entre líneas */
+    }
+
+    .contact-button {
+        font-size: 1rem; /* Reduce el tamaño del texto en el botón */
+        padding: 10px 20px; /* Reduce el padding del botón */
+        margin-top: 15px; /* Ajusta el espacio superior */
+    }
+    .modal-content {
+        padding: 15px; /* Reduce el padding */
+        width: 95%; /* Ocupa casi todo el ancho de la pantalla */
+    }
+
+    .modal-content h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+        margin-bottom: 10px;
+    }
+
+    .modal-content p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+        margin-bottom: 15px;
+    }
+
+    .close-icon {
+        font-size: 1.5rem; /* Reduce el tamaño del icono de cierre */
+    }
+
+    .input-field {
+        font-size: 0.9rem; /* Reduce el tamaño del texto dentro del campo */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .send-button {
+        font-size: 1rem; /* Reduce el tamaño del texto del botón */
+        padding: 10px 20px; /* Ajusta el tamaño del botón */
+    }
+    .serv-cont {
+        grid-template-columns: 1fr; /* Las tarjetas se apilan verticalmente */
+        gap: 20px; /* Reduce el espacio entre tarjetas */
+    }
+
+    .sev {
+        padding: 15px; /* Reduce el padding interno */
+        border-radius: 8px; /* Bordes ligeramente más pequeños */
+    }
+
+    .sev i {
+        font-size: 2rem; /* Reduce el tamaño del ícono */
+        margin-bottom: 15px;
+    }
+
+    .sev h3 {
+        font-size: 1.2rem; /* Reduce el tamaño del encabezado */
+        margin-bottom: 10px;
+    }
+
+    .sev p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+
+    #services h2 {
+        font-size: 1.8rem; /* Ajusta el título principal */
+        margin-bottom: 30px;
+    }
+    #carousel {
+        flex-direction: column; /* Mantén la columna, pero ajusta para pantallas más pequeñas */
+        padding: 10px; /* Reduce el padding para dar más espacio al contenido */
+        width: 100%;
+        margin: 0; /* Elimina márgenes para usar todo el espacio disponible */
+      }
+    
+      /* Contenedor de las diapositivas */
+      #slide-container {
+        flex-direction: column; /* Cambia la disposición a columna */
+        scroll-snap-type: y mandatory; /* Habilita el scroll snap vertical */
+        overflow-x: hidden; /* Desactiva el desplazamiento horizontal */
+        overflow-y: auto; /* Permite el desplazamiento vertical */
+        gap: 5px; /* Espacio entre las diapositivas */
+        height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+      }
+    
+      /* Contenedor externo */
+      .Contenedor {
+        flex-direction: column; /* Cambia a disposición vertical para pantallas pequeñas */
+        gap: 10px; /* Ajusta el espacio entre los elementos */
+        padding: 10px; /* Reduce el padding para aprovechar el espacio */
+      }
+    
+      /* Diapositiva individual */
+      .Contenedor > div {
+        width: 100%; /* Asegura que las diapositivas ocupen todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente según el contenido */
+      }
+      /* Estilos de cada diapositiva */
+  .slide2 {
+    padding: 10px; /* Reduce el padding para aprovechar mejor el espacio */
+    min-width: 100%; /* Cada diapositiva ocupa todo el ancho del contenedor */
+    text-align: center;
+  }
+
+  /* Estilos para las imágenes dentro de cada diapositiva */
+  .slide2 img {
+    width: 80%; /* Aumenta el tamaño de la imagen al 80% del contenedor */
+    max-width: 200px; /* Ajusta el ancho máximo de la imagen */
+    max-height: 220px; /* Ajusta la altura máxima de la imagen */
+    object-fit: cover; /* Mantiene el recorte adecuado de la imagen */
+    margin-bottom: 5px; /* Reduce el espacio inferior */
+    border-radius: 8px; /* Bordes redondeados */
+    clip-path: circle(50%); /* Mantiene la imagen circular */
+    margin-left: auto; /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
+  }
+  /* Encabezado principal de la sección de perfil */
+  .perfil h2 {
+    font-size: 1.5em; /* Reduce el tamaño del texto en pantallas pequeñas */
+    margin: 8px 0; /* Ajusta los márgenes */
+  }
+
+  /* Subtítulo de la sección de perfil */
+  .perfil h3 {
+    font-size: 1.5em; /* Reduce el tamaño del texto */
+    margin: 8px 0; /* Ajusta los márgenes */
+  }
+
+  /* Descripción de la sección de perfil */
+  .perfil p {
+    font-size: 1em; /* Reduce el tamaño del texto */
+    margin: 10px 0; /* Ajusta los márgenes */
+  }
+
+  /* Contenedor de los botones de navegación del carrusel */
+  .slide-buttons {
+    flex-direction: column; /* Los botones se apilan verticalmente */
+    gap: 10px; /* Espacio entre los botones */
+    padding: 15px 0; /* Aumenta el padding para una mejor visualización */
+  }
+
+  /* Estilos para los botones de navegación (flechas) */
+  .arrow {
+    padding: 8px 12px; /* Reduce el padding para ahorrar espacio */
+    font-size: 1.2em; /* Reduce el tamaño del icono */
+  }
+
+  /* Indicadores opcionales de la diapositiva (barra de progreso) */
+  .slide-indicator {
+    width: 40px; /* Reduce el ancho del indicador */
+    height: 8px; /* Ajusta la altura del indicador */
+  }
+  .contenedor3 {
+    flex-direction: column; /* Cambia la disposición de flex a columna */
+    padding: 10px; /* Reduce el espacio de relleno */
+    gap: 10px; /* Reduce el espacio entre la galería y la información */
+}
+
+/* Contenedor de fotos */
+.contenedor_fotos {
+    grid-template-columns: repeat(1, 1fr); /* Solo una columna en pantallas pequeñas */
+    grid-template-rows: auto; /* Las filas se ajustan al contenido */
+    gap: 10px; /* Reduce el espacio entre las imágenes */
+}
+
+.contenedor_fotos figure {
+    width: 100%; /* Las imágenes ocupan todo el ancho disponible */
+    height: auto; /* Altura automática según la proporción de la imagen */
+}
+
+.contenedor_fotos figure img {
+    height: 200px; /* Ajusta la altura para que se vea mejor en pantallas pequeñas */
+}
+
+/* Ajustes en la sección de información */
+.info {
+    padding: 10px; /* Reduce el relleno en la sección de información */
+}
+
+.info h2 {
+    font-size: 20px; /* Tamaño de fuente más pequeño para el título */
+}
+
+.info h3 {
+    font-size: 18px; /* Tamaño de fuente más pequeño para el subtítulo */
+}
+
+.info p {
+    font-size: 14px; /* Reduce el tamaño del párrafo */
+}
+
+.join-btn {
+    padding: 8px 16px; /* Reduce el tamaño del botón */
+    font-size: 14px; /* Tamaño de fuente más pequeño para el botón */
+}
+/* Contenedor general de la sección */
+.contenedor4 {
+    flex-direction: column; /* Cambia el diseño a columnas */
+    padding: 20px; /* Reduce el padding general */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  /* Sección de información del video */
+  .info_video {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-bottom: 20px; /* Añade espacio inferior entre secciones */
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+  }
+
+  .info_video h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+    margin-bottom: 10px; /* Ajusta el margen inferior */
+  }
+
+  .info_video p {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    line-height: 1.4; /* Ajusta el espacio entre líneas */
+  }
+
+  /* Contenedor del video */
+  .cont_video {
+    max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    justify-content: center; /* Centra el video */
+  }
+
+  .cont_video iframe {
+    max-width: 100%; /* El iframe ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 6px; /* Opcional: reduce un poco los bordes redondeados */
+  }
+  .contenedor2 {
+    flex-direction: column; /* Cambia a disposición en columna */
+    gap: 10px; /* Reduce el espacio entre secciones */
+}
+
+.contenido_fre, .skills {
+    flex: none; /* Desactiva el comportamiento de flex para ocupar todo el ancho */
+    width: 100%; /* Ocupa el ancho completo */
+}
+
+.contenido_fre h1 {
+    font-size: 24px; /* Ajusta el tamaño de fuente */
+}
+
+.acor_titulo h2 {
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+}
+.footer-container {
+    flex-direction: column; /* Apila los elementos en lugar de alinearlos horizontalmente */
+    align-items: center; /* Centra los elementos */
+}
+
+.footer-left, .footer-middle, .footer-right {
+    padding: 10px;
+    text-align: center; /* Centra el texto en cada columna */
+}
+
+.footer-left h1, .footer-middle h2, .footer-right h2 {
+    font-size: 20px; /* Ajusta el tamaño de los títulos en pantallas pequeñas */
+}
+
+.footer-middle p {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+}
+
+input[type="email"] {
+    width: 100%; /* Hace el campo de email más grande en pantallas pequeñas */
+}
 }
